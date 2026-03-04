@@ -33,5 +33,10 @@ namespace Devops.Core
         {
             Specy = specy;
         }
+
+        public override string ToString()
+        {
+            return $"Voici un poisson d'espèce {Specy}. Il est {(IsCarnivore ? "carnivore" : "herbivore")}.";
+        }
     }
 }

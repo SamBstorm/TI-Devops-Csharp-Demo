@@ -1,10 +1,12 @@
-﻿namespace Devops.App
+﻿using Devops.Core;
+
+namespace Devops.App
 {
     internal class Program
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello, World!");
+            Console.WriteLine(new Fish(FishSpecies.Sole));
         }
     }
 }
